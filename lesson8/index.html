@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 8</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+      integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="scripts.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="container">
+        <div class="row">
+          <h1 class="display-4" name="lesson">Lesson 8</h1>
+          <p class="lead">Document Object Model (DOM)</p>
+        </div>
+
+        <img
+          src="https://assets.ithillel.ua/assets/school/images/logo-intro.svg"
+          width="460"
+          height="99"
+          alt="Компьютерная школа Hillel"
+          class="mb-4"
+        />
+
+        <div class="row mb-4" name="qwer">
+          <ol class="list-group">
+            <li class="list-group-item">
+              <a href="https://bit.ly/3ihXdyn" target="blank">API</a>
+            </li>
+            <li class="list-group-item">
+              <a href="https://mzl.la/2HDuxmI" target="blank">Web API's</a>
+            </li>
+            <li class="list-group-item">
+              <a href="https://mzl.la/3jj2Nlq" target="blank">DOM</a>
+            </li>
+            <li class="list-group-item">
+              <a href="https://mzl.la/2GkMplU" target="blank">Document</a>
+            </li>
+            <li class="list-group-item">
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/Events"
+                target="blank"
+                >Events</a
+              >
+            </li>
+          </ol>
+        </div>
+
+        <h2>Traversing The DOM</h2>
+
+        <div class="root-nodes-table row mb-4">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th>Property</th>
+                <th>Node</th>
+                <th>Node Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>document</code></td>
+                <td><code>#document</code></td>
+                <td><code>DOCUMENT_NODE</code></td>
+              </tr>
+              <tr>
+                <td><code>document.documentElement</code></td>
+                <td><code>html</code></td>
+                <td><code>ELEMENT_NODE</code></td>
+              </tr>
+              <tr>
+                <td><code>document.head</code></td>
+                <td><code>head</code></td>
+                <td><code>ELEMENT_NODE</code></td>
+              </tr>
+              <tr>
+                <td><code>document.body</code></td>
+                <td><code>body</code></td>
+                <td><code>ELEMENT_NODE</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="row mb-4">
+          <div class="card active-element" id="card" style="width: 42rem">
+            <img
+              src="https://www.w3schools.com/js/pic_htmltree.gif"
+              class="card-img-top"
+              alt="schema"
+            />
+            <div class="card-body">
+              <h5 class="card-title">The HTML DOM Tree of Objects</h5>
+              <p class="card-text">
+                The <strong>Document Object Model (DOM)</strong> connects web
+                pages to scripts or programming languages by representing the
+                structure of a document—such as the HTML representing a web
+                page—in memory. Usually, that means JavaScript, although
+                modeling HTML, SVG, or XML documents as objects are not part of
+                the core JavaScript language, as such.
+              </p>
+              <a
+                href="https://www.w3schools.com/js/js_htmldom.asp"
+                class="btn btn-primary"
+                >Source</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div id="test" name="test">test</div>
+      <button id="button">button</button>
+    </div>
+  </body>
+</html>

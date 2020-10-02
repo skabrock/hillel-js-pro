@@ -1,0 +1,29 @@
+body {
+  min-height: 100vh;
+  background: #628fbe;
+}
+
+.schema {
+  width: auto;
+  height: 350px;
+  margin: 0 auto;
+}
+
+.root-nodes-table {
+  background: #fff;
+}
+
+.active-element {
+  box-shadow: 0 0 3px 4px blue;
+}
+
+.active-element-new {
+  /* box-shadow: 0 0 6px 8px chartreuse; */
+  color: red;
+}
+
+.new-class-name {
+  box-shadow: 0 0 5px 10px green;
+  color: red;
+  transition: 0.2s;
+}
