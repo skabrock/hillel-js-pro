@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo list</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="scripts.js"></script>
+  </head>
+  <body>
+    <div id="root" class="root">
+      <div class="bg"></div>
+      <input id="task-input" type="text" placeholder="type task here..." />
+      <section></section>
+      <section></section>
+    </div>
+
+    <script id="list-template" type="text/template">
+      <div id={{id}}>
+        <h3>{{title}}</h3>
+        <ul class="todo-list">
+          {{content}}
+        </ul>
+      </div>
+    </script>
+
+    <script id="element-template" type="text/template">
+      <li>
+        <label>
+          <input type="checkbox" {{attrs}} />
+          <p>{{text}}</p>
+        </label>
+      </li>
+    </script>
+  </body>
+</html>

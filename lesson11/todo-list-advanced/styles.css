@@ -1,0 +1,130 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: rgb(124, 152, 161);
+}
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  filter: blur(9px);
+}
+
+.bg:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/51bad5a5-a63e-4bbf-9937-6b5b78416457/dccmpyu-ee940815-59df-45cd-b8e0-163f6e8fbeb9.jpg/v1/fill/w_1024,h_512,q_75,strp/mountain_road_by_allrichart_dccmpyu-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD01MTIiLCJwYXRoIjoiXC9mXC81MWJhZDVhNS1hNjNlLTRiYmYtOTkzNy02YjViNzg0MTY0NTdcL2RjY21weXUtZWU5NDA4MTUtNTlkZi00NWNkLWI4ZTAtMTYzZjZlOGZiZWI5LmpwZyIsIndpZHRoIjoiPD0xMDI0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.OItJt_Qj45LEf4WgvA9ngOosZsmB6KynAnOJjr8UmiE);
+  background-size: cover;
+  opacity: 0.3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.root {
+  width: 50%;
+  min-width: 50rem;
+  margin: 5rem auto 3rem;
+  background: rgb(247, 249, 239);
+  box-shadow: -1rem 0.5rem 3rem rgb(75, 75, 75);
+}
+
+h3 {
+  width: 100%;
+  background: rgb(23, 1, 19);
+  color: white;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgb(211, 211, 211);
+  padding: 0 30px;
+  color: rgb(75, 74, 74);
+}
+
+li input[type="checkbox"] {
+  margin-right: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+li button {
+  cursor: pointer;
+  font-size: 1rem;
+  color: rgb(89, 89, 89);
+  border-radius: 1.5rem;
+  border: 1px solid rgb(157, 157, 157);
+  min-width: 2rem;
+  min-height: 1.5rem;
+  padding: 0.3rem 0.8rem;
+  outline: none;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+li:hover button {
+  opacity: 1;
+}
+
+li:first-child {
+  border: none;
+}
+
+li > label {
+  flex: 1 1 auto;
+  line-height: 2rem;
+}
+
+li > label > p {
+  display: inline-block;
+}
+
+li > label > input {
+  vertical-align: middle;
+}
+
+li > * {
+  flex: 0 0 auto;
+}
+
+#rejected-list p {
+  text-decoration: line-through;
+}
+
+#rejected-list input[type="checkbox"] {
+  display: none;
+}
+
+input[type="text"] {
+  width: 100%;
+  height: 5rem;
+  font-size: 2rem;
+  padding: 0 2rem;
+  border: none;
+}
