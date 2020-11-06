@@ -2,8 +2,8 @@
 
 const xhr = new XMLHttpRequest();
 
-xhr.open("GET", "https://jsonplaceholder.typicode.com/posts");
-// xhr.open("GET", "res.json", false);
+// xhr.open("GET", "https://jsonplaceholder.typicode.com/posts");
+xhr.open("GET", "res.json", false);
 // xhr.open("GET", "file:///Users/sk/Hillel/lessons/lesson%2016/res.json", false);
 
 xhr.send();

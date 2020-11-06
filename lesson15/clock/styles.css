@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Digital7-mono";
+  src: url("./fonts/digital-7/digital-7-mono.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Digital7-mono", serif;
+  background-color: rgb(35, 34, 38);
+  color: rgb(255, 208, 0);
+  font-size: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder {
+  position: absolute;
+  color: rgb(58, 53, 53);
+  z-index: -1;
+}
+
+.blink {
+  visibility: hidden;
+}
