@@ -28,7 +28,6 @@ document.forms.chat.addEventListener("submit", function (e) {
   e.preventDefault();
 
   const data = new FormData(this);
-  console.log([...data]);
   const message = new Message([...data.values()][0]);
 
   sillyChat.say(message);
