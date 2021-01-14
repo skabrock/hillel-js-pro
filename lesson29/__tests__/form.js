@@ -1,7 +1,5 @@
-import { getFormData, sendData, handleSubmit, initForm } from "../form.js";
-import { JSDOM } from "jsdom";
-const dom = new JSDOM();
-global.document = dom.window.document;
+import { getFormData, initForm } from "../form.js";
+global.fetch = jest.fn(() => Promise.resolve());
 
 describe("getFormData function", () => {
   let testForm;
@@ -13,6 +11,7 @@ describe("getFormData function", () => {
     testElement.name = "testElementName";
     testElement.value = "testValue";
     testForm.append(testElement);
+    document.body.append(testForm);
   });
 
   test("get form data", () => {
@@ -23,6 +22,9 @@ describe("getFormData function", () => {
     initForm(testForm.name);
     testForm.submit();
 
-    expect(fetch).toHaveBeenCalled();
+    expect(fetch).toHaveBeenCalledWith("http://someurl.com.ua", {
+      method: "POST",
+      body: [["testElementName", "testValue"]],
+    });
   });
 });

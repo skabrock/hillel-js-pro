@@ -19,7 +19,5 @@ export function handleSubmit(e) {
 export function initForm(formName) {
   const form = getForm(formName);
 
-  console.log(document.forms);
-
   form.addEventListener("submit", handleSubmit);
 }
